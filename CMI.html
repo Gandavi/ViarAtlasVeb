@@ -104,9 +104,9 @@
              animation__fadeback="property: components.material.material.color; type: color; from: #000; to: #FFF; dur: 300; startEvents: animationcomplete__fade"></a-sky>
 
       <!-- Image links. -->
+      <a-entity template="src: #link" data-src="#one" data-thumb="#one-thumb" position="-3 3 0" rotation="0 55 0"><a-entity class="link" geometry="primitive: plane" material="shader: flat; src: #one-thumb" event-set__mouseenter="scale: 1.2 1.2 1" event-set__mouseleave="scale: 1 1 1" event-set__click="_target: #image-360; _delay: 300; material.src: #one" proxy-event="event: click; to: #image-360; as: fade" sound="on: click"></a-entity></a-entity>
       <a-entity id="links" layout="type: line; margin: 1.5" position="0 -1 -4">
-       <a-entity template="src: #link" data-src="#one" data-thumb="#one-thumb" position="-3.67602 2.40505 0" rotation="0 55 0"><a-entity class="link" geometry="primitive: plane" material="shader: flat; src: #one-thumb" event-set__mouseenter="scale: 1.2 1.2 1" event-set__mouseleave="scale: 1 1 1" event-set__click="_target: #image-360; _delay: 300; material.src: #one" proxy-event="event: click; to: #image-360; as: fade" sound="on: click"></a-entity></a-entity>
-        <a-entity template="src: #link" data-src="#two" data-thumb="#two-thumb"></a-entity>
+      <a-entity template="src: #link" data-src="#two" data-thumb="#two-thumb"></a-entity>
         <a-entity template="src: #link" data-src="#three" data-thumb="#three-thumb"></a-entity>
       </a-entity>
       <!-- Camera + cursor. -->
